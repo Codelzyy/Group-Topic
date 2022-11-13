@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px ; padding:0px;}
+
+a{ text-decoration:none;}
+
+img{ border:0px;}
+
+.panelleft1{
+	float:left;
+	padding-left:10px;
+	background:#FFFFFF;
+}
+.PanelBarMenu{
+	float:left;
+	/*width:181px;*/
+	width:15%;
+	margin-bottom:10px;
+}
+
+ul.menubar li a:hover ,
+ul.menubar li a:focus,
+ul.menubar li a:active{
+	color:#bde6ff;
+}
+
+
+/*------------*/
+.PanelBarMenu1{
+	float:left;
+	width:233px;
+	background:#e1e8e7;
+	border-bottom:2px #09367a solid;
+	margin-bottom:10px;
+}
+
+
+/* ---------------*/
+.panelcontent1{
+	float:left;
+	background:#FFFFFF;
+	margin-left:5px;
+	margin-right:5px;
+	width:80%;
+}

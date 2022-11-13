@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    block head
+      title TR&#x1AF;&#x1EDC;NG &Dstrok;&#x1EA0;I H&#x1ECC;C S&#x1AF; PH&#x1EA0;M K&#x1EF8; THU&#x1EAC;T TP.HCM - Trang &dstrok;&abreve;ng ki&#x301; ho&#x323;c ph&acirc;&#x300;n
+      //- link(rel='stylesheet' type='text/css' href='css/style.css')
+      meta(http-eqyuiv='Content-Type' content='text/html; charset=utf-8')
+      link(href='/Content/css/style_main.css' rel='stylesheet')
+      link(href='/Content/ui/themes/default/easyui.css' rel='stylesheet')
+      link(href='/Content/css/main.css' rel='stylesheet' type='text/css')
+      link(href='/Content/css/inside.css' rel='stylesheet' type='text/css')
+      link(href='/Content/css/basic.css' rel='stylesheet' type='text/css')
+      <script type="javascript" src="../node_modules/dotenv"></script>
+      <script src="https://unpkg.com/axios@0.19.0/dist/axios.min.js"></script>
+      meta(http-equiv=`Content-Security-Policy' content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://${ip}:8080`)
+      
+    // HEADER
+  include _header
+
+    
+      // CONTENT
+  block content
+      // FOOTER
+  include _footer
+
+    //- script(src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js')
+    //- script(src='/js/mapbox.js')
+    script(src='/js/bundle.js')
+    //- script(type="module", src='/js/login.js')
+    //- script(type="module", src='/js/search.js')
+    //- script(type="module", src='/js/mainpage.js')
+    //- script(type="module", src='/js/enroll.js')
+    

@@ -1,0 +1,180 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+a {
+   text-decoration: none !important;
+}
+body {
+   margin: 0 auto;
+   font: normal 11px Arial, Helvetica, sans-serif;
+   background: url(../images/bg_body.jpg) repeat-x;
+   background-color: hsl(0, 0%, 96%);
+}
+#main {
+   width: 1000px;
+   position: relative;
+   margin: 2px auto 0px auto;
+   background-color: white;
+}
+.clear {
+   clear: both;
+   height: 0px;
+}
+.menu_a {
+   color: #fff;
+}
+ul {
+   list-style: none;
+}
+th,
+td {
+   padding: 5px;
+}
+.trhover:hover {
+   background-color: #9fd2f3;
+   color: #fff;
+}
+th {
+   background: #00a8d8;
+   color: #fff;
+   border-color: #fff;
+}
+td,
+table {
+   border-color: #00a8d8;
+}
+.button {
+   padding: 2px 5px 2px 5px;
+   background-color: #2a7de2;
+   color: #fff;
+   border-radius: 2px 2px 2px 2px;
+   border: none;
+}
+.button:hover {
+   background-color: #074590;
+}
+.a_link {
+   padding: 4px 4px 4px 4px;
+   border: 1px;
+   background-color: #c4bcbc;
+   color: #000;
+}
+/************** Phan Head *****************/
+.head {
+   width: 100%;
+   height: auto;
+}
+.head .banner {
+}
+.head_leftmenu {
+   width: 6px;
+   float: left;
+   background: url(../images/menu_left.png) no-repeat;
+}
+.head_rightmenu {
+   width: 6px;
+   float: right;
+   background: url(../images/menu_5.png) no-repeat;
+   height: 42px;
+}
+.head_mainmenu {
+   width: 988px;
+}
+.head_leftmenu,
+.head_mainmenu {
+   float: left;
+   height: 42px;
+}
+
+/************** End Head *****************/
+/************** Content**********************/
+.content {
+   display: table-row;
+   float: left;
+   margin: 0px;
+   padding: 0px;
+   width: 100%;
+}
+
+.content_main {
+   width: 900px;
+   padding: 10px 10px 10px 10px;
+   margin: 0 auto;
+   min-height: 500px;
+}
+
+/**** Menu Left ***/
+.bg_tieude {
+   background-color: #25b5f5;
+   font-size: 15px;
+   color: #fff;
+   height: 30px;
+}
+.title {
+   font-size: 16px;
+   color: blue;
+}
+
+/****End Menu Left ***/
+
+/************** End Content *****************/
+/************** Footer *********************/
+.footer {
+   background-color: olive;
+}
+.content_footer {
+   clear: both;
+   background: url(../images/bg_footer.png);
+   height: 118px;
+}
+.left_footer {
+   float: left;
+   font: normal 12px Arial, Helvetica, sans-serif;
+   color: hsl(0, 100%, 100%);
+   line-height: 20px;
+   padding: 20px 0px 0px 10px;
+}
+.left_footer span {
+   color: hsl(60, 100%, 90%);
+   font: bold 12px Arial, Helvetica, sans-serif;
+   padding-bottom: 5px;
+}
+.right_footer {
+   float: right;
+   padding: 20px 10px 0px 0px;
+}
+/************** End Footer *****************/
+#messageDiv {
+   background-color: #f6e3dc;
+   text-align: center;
+   padding: 5px 5px 5px 5px;
+   border: 1px solid;
+   font-size: 14px;
+   margin-bottom: 10px;
+}
+tbody .scrollContent {
+   height: 100px;
+   overflow: auto;
+}
+img {
+   border-style: none;
+}
+.thongtinsinhvien {
+   text-align: right;
+   font-weight: bold;
+   font-weight: 600;
+   width: 97%;
+   color: red;
+}
+.divfilter {
+   border: 1px solid #c4bcbc;
+   border-radius: 3px;
+   padding: 10px 10px 10px 10px;
+}
+#DanhSachLop {
+   display: block;
+}
+/* Cho Table*/
+
+/* End Table  */

@@ -1,0 +1,19 @@
+extends base
+
+block content
+  body(data-alert=`${alert ? alert : ''}`)
+    .page
+      .container
+        form.form.form--login
+          label(for='email')
+            b Email
+          input#email(type='text' placeholder='Enter Username' name='email' required='')
+          label(for='pwd')
+            b Password
+          input#password(type='password' placeholder='Enter Password' name='pwd' required='')
+          button Login
+          .log-google
+            .text-center.text-primary
+              a.btn.btn-danger(href='/auth/google')
+                span.fa.fa-google
+                |  Sign In with Google

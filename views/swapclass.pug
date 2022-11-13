@@ -1,0 +1,45 @@
+extends base
+block content
+    h2.message-enroll Chuy&#x1EC3;n nh&oacute;m:
+    br
+    div.enrollmaindiv
+        table.enrollmaintable(width='100%' border='1' cellpadding='10')
+            thead
+            tr
+                th M&atilde; l&#x1EDB;p h&#x1ECD;c ph&#x1EA7;n
+                th T&ecirc;n h&#x1ECD;c ph&#x1EA7;n
+                th S&#x1ED1; t&iacute;n ch&#x1EC9;
+                th L&#x1ECB;ch h&#x1ECD;c
+                th Gia&#x309;ng vi&ecirc;n
+                th Ng&agrave;y b&#x1EAF;t &dstrok;&#x1EA7;u
+                th Ng&agrave;y k&#x1EBF;t th&uacute;c
+                th Giới hạn
+                th Số sinh viên
+                th &Dstrok;&abreve;ng ky&#x301;
+            tbody.btn-enroll
+                ul
+                    each course in courses
+                        - const dateStart = new Date(course.dateStart).toLocaleDateString('vi-VN');
+                        - const dateEnd = new Date(course.dateEnd).toLocaleDateString('vi-VN');
+                        tr
+                            td=course._id
+                            td=course.subjectname
+                            td=course.stc
+                            td=course.teachername
+                            td=course.teachername
+                            td=dateStart
+                            td=dateEnd
+                            td=course.max
+                            td=course.total
+                            td
+                                - if (course.isExist)
+                                    a.inactive Đã đăng kí
+                                - else
+                                    -if (course.max < course.total + 1)
+                                        a.inactive Đăng ký
+                                    - else 
+                                        span.enroll-course(data-idCourse=course._id) Đăng ký;
+                                        
+            //- td.message-enroll(colspan='10' align='right')
+                
+            

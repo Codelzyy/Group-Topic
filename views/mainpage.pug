@@ -1,0 +1,123 @@
+extends base
+mixin renderSubject(STT, code, name, type, STC)
+    - if (STT%2 === 0)
+        tr.row_w
+            td.col1(width='70px')=STT
+            td.col2=code
+            td.col3=name
+            td.col4=type
+            td.col4=STC
+    - else
+        tr.row_b
+            td.col1(width='70px')=STT
+            td.col2=code
+            td.col3=name
+            td.col4=type
+            td.col4=STC
+block content
+  body(data-alert=`${alert ? alert : ''}`)
+    .page
+        .container
+            .info_container
+                .panelleft1
+                        .blog_menu4_HP
+                        .PanelBarMenu
+                            ul.menubar
+                                li.bg_mn
+                                    a(href='/' target='_parent') Trang &dstrok;&abreve;ng ky&#x301; ho&#x323;c ph&#x1EA7;n
+                                li.bg_mn
+                                    a(href='/tracuu' target='_newtab') Tra c&#x1B0;&#x301;u ho&#x323;c ph&#x1EA7;n
+                                li.bg_mn
+                                    a(href='/hocphan' target='_newtab') Chương trình đào tạo
+                .panelcontent1
+                    .wrapper_vb
+                        .blog_menu4_HP
+                        #DanhSachLop(style="display: block !important")
+                            table(border='0' width='100%' style='margin: auto')
+                                tr
+                                    td
+                                        b.title
+                                        | DANH SA&#x301;CH NH&#x1EEE;NG H&#x1ECC;C PH&#x1EA6;N CH&#x1AF;A T&Iacute;CH L&Utilde;Y &Dstrok;&#x1AF;&#x1EE2;C T&#x1ED4; CH&#x1EE8;C GI&#x1EA2;NG D&#x1EA0;Y THEO K&#x1EBE;
+                                        | HO&#x1EA0;CH
+                                tr
+                                    td(align='right')
+                                tr
+                                    td
+                                        div(style='height: 5px')
+                                        table(width='100%' border='1' style='border-collapse: collapse; font-size: 13px')
+                                            thead
+                                                tr
+                                                    th STT
+                                                    th M&atilde; HP
+                                                    th T&ecirc;n h&#x1ECD;c ph&#x1EA7;n
+                                                    th Lo&#x1EA1;i HP
+                                                    th S&#x1ED1; t&iacute;n ch&#x1EC9;
+                                                    th &Dstrok;&abreve;ng k&yacute;
+                                            tbody.btn-search
+                                                ul
+                                                    each course, i in courseOpen
+                                                        tr
+                                                            td=i
+                                                            td=course.subject_id || "HP"
+                                                            td=course.name
+                                                            td=course.type
+                                                            td=course.numberOfCredits
+                                                            td
+                                                                button.btn-swap(data-idCourse=`${course.id}`) Tìm khoá học
+                                                          
+                        #DanhSachChon
+                        div.dschon
+                        div.dsdk
+                            fieldset.fielddschon
+                                legend
+                                    b.legend-chon Phi&#x1EBF;u &dstrok;&abreve;ng k&yacute; m&ocirc;n h&#x1ECD;c
+                                #DanhSachHocPhanDaDangKi
+                                    div.dshpdk
+                                        a(href='localhost:8080/')
+                                            img(src='/Content/images/refresh.png' width='25')
+                                        |                                        Lo&#x323;c la&#x323;i
+                                    #reload_ketquadangki
+                                        table(width='100%')
+                                            tr
+                                                td(width='60%')
+                                                    b.kq-reload=`Tổng số tín chỉ đã đăng ký : ${STT} tín chỉ`
+                                                td.td-kq-reload
+                                                    b
+                                                        | Ghi ch&uacute; :
+                                                        img(src='/Content/images/yellow.png' width='15px')
+                                                        |                                                 Tr&ugrave;ng l&#x1ECB;ch
+                                        table.tb-kqdk(width='100%' border='1' cellpadding='10')
+                                            thead
+                                                tr
+                                                th Mã lớp học phần
+                                                th Tên học phần
+                                                th Số tín chỉ
+                                                th Thời gian
+                                                th Giảng viên	
+                                                th Ngày bắt đầu
+                                                th Ngày kết thúc	
+                                                th Chuyển nhóm
+                                                th Xóa đăng ký
+                                            tbody.btn-delete-swap
+                                                ul
+                                                    each course in courses
+                                                        - const dateStart = new Date(course.dateStart).toLocaleDateString('vi-VN');
+                                                        - const dateEnd = new Date(course.dateEnd).toLocaleDateString('vi-VN');
+                                                        - const hour = new Date(course.dateStart).toTimeString().split(' ')[0];
+                                                        tr
+                                                            td=course._id
+                                                            td=course.subjectname
+                                                            td=course.stc
+                                                            td=hour
+                                                            td=course.teachername
+                                                            td=dateStart
+                                                            td=dateEnd
+                                                            td
+                                                                button.btn-swap(data-idCourse=`${course.subject_code}`) Chuyển nhóm
+                                                            td
+                                                                button.btn-xoa(data-idCourse=`${course._id}`) Xóa đăng kí
+                                            tr
+                                                td.tdata(colspan='9' align='right')
+                                                    a(href='' target='_blank')
+                                                        b.b-phieu() Xu&#x1EA5;t phi&#x1EBF;u &dstrok;&abreve;ng k&yacute;
+                                                        img(src='/Content/images/printer.jpg' width='25')

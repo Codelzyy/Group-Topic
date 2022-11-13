@@ -1,0 +1,28 @@
+.hide=ip
+.paneltop
+  .banner
+    img(src='/Content/images/banner_UTE.png')
+  if user
+    .blog_menu2
+      .img1_menu2
+        img(src='/Content/images/img1_menu2.jpg')
+      ul.menu2
+        li
+          a(href='javascript:void(0)')=`Sinh viên: ${user.displayName || user.name}`
+            span [ 20110592 ]
+        li#id_menu2
+          a(href='/logout') Thoát
+      .img2_menu2
+        img(src='/Content/images/img2_menu2.jpg')
+    .blog_menu3
+      .img1_menu3
+        img.img1_menu2(src='/Content/images/img1_menu3.jpg')
+      ul.menu3
+        li
+          img.img(src='/Content/images/hoa.png')
+          a(href='#')
+            | &Dstrok;&Abreve;NG K&Yacute; H&#x1ECC;C PH&#x1EA6;N
+            img(src='/Content/images/ARROW.png')
+            span &Dstrok;&abreve;ng ki&#x301; ho&#x323;c ph&acirc;&#x300;n theo k&ecirc;&#x301; hoa&#x323;ch
+      .img2_menu3
+        img.img2_menu2(src='/Content/images/img2_menu3.jpg')

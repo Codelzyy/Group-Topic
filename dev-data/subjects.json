@@ -1,0 +1,602 @@
+[
+    {
+        "subject_id": "MATH143001",
+        "name": "Đại số tuyến tính và cấu trúc đại số",
+        "numberOfCredits": 4,
+        "type": "outline"
+    },
+    {
+        "subject_id": "PHED110613",
+        "name": "Giáo dục thể chất 2",
+        "numberOfCredits": 1,
+        "type": "physical"
+    },
+    {
+        "subject_id": "INPR130285",
+        "name": "Nhập môn lập trình",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "INIT130185",
+        "name": "Nhập môn ngành CNTT",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "MATH132401",
+        "name": "Toán 1",
+        "numberOfCredits": 3,
+        "type": "outline"
+    },
+    {
+        "subject_id": "LLCT130105",
+        "name": "Triết học Mác - Lênin",
+        "numberOfCredits": 3,
+        "type": "outline"
+    },
+    {
+        "subject_id": "EHQT130137",
+        "name": "Anh văn 1",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "EHQT130237",
+        "name": "Anh văn 2",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "LLCT120405",
+        "name": "Chủ nghĩa xã hội khoa học",
+        "numberOfCredits": 2,
+        "type": "outline"
+    },
+    {
+        "subject_id": "GDQP008031",
+        "name": "Giáo dục quốc phòng 1(ĐH)",
+        "numberOfCredits": 1,
+        "type": "physical"
+    },
+    {
+        "subject_id": "GDQP008032",
+        "name": "Giáo dục quốc phòng 2(ĐH)",
+        "numberOfCredits": 1,
+        "type": "physical"
+    },
+    {
+        "subject_id": "GDQP008033",
+        "name": "Giáo dục quốc phòng 3(ĐH)",
+        "numberOfCredits": 1,
+        "type": "physical"
+    },
+    {
+        "subject_id": "PHED110513",
+        "name": "Giáo dục thể chất 1",
+        "numberOfCredits": 1,
+        "type": "physical"
+    },
+    {
+        "subject_id": "LLCT120205",
+        "name": "Kinh tế chính trị Mác - Lênin",
+        "numberOfCredits": 2,
+        "type": "outline"
+    },
+    {
+        "subject_id": "PRTE230385",
+        "name": "Kỹ thuật lập trình",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "GELA220405",
+        "name": "Pháp luật đại cương",
+        "numberOfCredits": 2,
+        "type": "outline"
+    },
+    {
+        "subject_id": "PHYS111202",
+        "name": "Thí nghiệm Vật lý 1",
+        "numberOfCredits": 1,
+        "type": "outline"
+    },
+    {
+        "subject_id": "MATH132501",
+        "name": "Toán 2",
+        "numberOfCredits": 3,
+        "type": "outline"
+    },
+    {
+        "subject_id": "SYTH220491",
+        "name": "Tư duy hệ thống",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "PHYS130902",
+        "name": "Vật lý 1",
+        "numberOfCredits": 3,
+        "type": "outline"
+    },
+    {
+        "subject_id": "MATH132901",
+        "name": "Xác suất – Thống kê ứng dụng",
+        "numberOfCredits": 3,
+        "type": "outline"
+    },
+    {
+        "subject_id": "EHQT230337",
+        "name": "Anh văn 3",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "DASA230179",
+        "name": "Cấu trúc dữ liệu và giải thuật",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "DBSY230184",
+        "name": "Cơ sở dữ liệu",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "IVNC320905",
+        "name": "Cơ sở văn hóa Việt Nam",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "GEFC220105",
+        "name": "Kinh tế học đại cương",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "LESK120190",
+        "name": "Kỹ năng làm việc trong môi trường kỹ thuật",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "PLSK120290",
+        "name": "Kỹ năng xây dựng kế hoạch",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "OOPR230279",
+        "name": "Lập trình hướng đối tượng",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "INLO220405",
+        "name": "Nhập môn logic học",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "IQMA220205",
+        "name": "Nhập môn quản trị chất lượng",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "INMA220305",
+        "name": "Nhập môn quản trị học",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "INSO321005",
+        "name": "Nhập môn xã hội học",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "REME320690",
+        "name": "Phương pháp nghiên cứu khoa học",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "ENPS220591",
+        "name": "Tâm lý học kỹ sư",
+        "numberOfCredits": 2,
+        "type": "elective"
+    },
+    {
+        "subject_id": "DIGR230485",
+        "name": "Toán rời rạc và lý thuyết đồ thị",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "LLCT120314",
+        "name": " Tư tưởng Hồ Chí Minh",
+        "numberOfCredits": 2,
+        "type": "outline"
+    },
+    {
+        "subject_id": "INSE330380",
+        "name": "An toàn thông tin",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "EHQT330537",
+        "name": "Anh văn 5",
+        "numberOfCredits": 3,
+        "type": "outline"
+    },
+    {
+        "subject_id": "CLCO332779",
+        "name": "Điện toán đám mây",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "PROJ215879",
+        "name": "Đồ án CNTT",
+        "numberOfCredits": 1,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ESYS431080",
+        "name": "Hệ thống nhúng",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "INOT431780",
+        "name": "Internet vạn vật (2+1)",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "WEPR330479",
+        "name": "Lập trình Web",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "EHQT230437",
+        "name": "Anh văn 4",
+        "numberOfCredits": 3,
+        "type": "outline"
+    },
+    {
+        "subject_id": "EEEN231780",
+        "name": "Điện tử căn bản",
+        "numberOfCredits": 3,
+        "type": "outline"
+    },
+    {
+        "subject_id": "PHED130715",
+        "name": "Giáo dục thể chất 3 (Tự chọn)",
+        "numberOfCredits": 3,
+        "type": "outline"
+    },
+    {
+        "subject_id": "OPSY330280",
+        "name": "Hệ điều hành",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "DBMS330284",
+        "name": "Hệ quản trị cơ sở dữ liệu",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "WIPR230579",
+        "name": "Lập trình trên Windows",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "NEES330380",
+        "name": "Mạng máy tính căn bản",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "LLCT220514",
+        "name": "Lịch sử Đảng CSVN",
+        "numberOfCredits": 2,
+        "type": "outline"
+    },
+    {
+        "subject_id": "FOIT331380",
+        "name": "Lý thuyết thông tin",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ADPL331379",
+        "name": "Ngôn ngữ lập trình tiên tiến",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ITPM430884",
+        "name": "Quản lý dự án CNTT",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "PRBE214262",
+        "name": "Thực tập điện tử căn bản",
+        "numberOfCredits": 1,
+        "type": "outline"
+    },
+    {
+        "subject_id": "ECOM430984",
+        "name": "Thương mại điện tử",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "ARIN330585",
+        "name": "Trí tuệ nhân tạo",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "DIPR430685",
+        "name": "Xử lý ảnh số",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "BDAN333977",
+        "name": "Big Data Analysis",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "TOEN430979",
+        "name": "Công cụ và môi trường phát triển PM",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "OOSE330679",
+        "name": "Công nghệ Phần mềm HĐT",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "NSMS432280",
+        "name": "Hệ thống giám sát an toàn mạng",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "MALE431085",
+        "name": "Học máy",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "DAMI330484",
+        "name": "Khai phá dữ liệu",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "DAWH430784",
+        "name": "Kho dữ liệu",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "MOPR331279",
+        "name": "Lập trình di động",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ADMP431879",
+        "name": "Lập trình di động nâng cao",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "ADNT330580",
+        "name": "Mạng máy tính nâng cao",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "INSE331980",
+        "name": "Mật mã học",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "DEPA330879",
+        "name": "Mẫu thiết kế phần mềm",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "BDES333877",
+        "name": "Nhập môn dữ liệu lớn (Big Data Essentials)",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ISAD330384",
+        "name": "Phân tích và thiết kế hệ thống thông tin",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "DIFO432180",
+        "name": "Pháp lý kỹ thuật số",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "SOPM431679",
+        "name": " Quản lý dự án phần mềm",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "SEEN431579",
+        "name": "Search Engine",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "ETHA332080",
+        "name": "Tấn công mạng",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ESDN432079",
+        "name": "Thiết kế phần mềm giáo dục",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "INRE431084",
+        "name": "Truy tìm thông tin",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "HCIN431979",
+        "name": "Tương tác người máy",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "NSEC430880",
+        "name": "An ninh mạng",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "DBSE431284",
+        "name": "Bảo mật CSDL",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "MTSE431179",
+        "name": "Các công nghệ phần mềm mới",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ITEN420885",
+        "name": "Chuyên đề Doanh nghiệp",
+        "numberOfCredits": 2,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "SOTE431079",
+        "name": "Kiểm thử phần mềm",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ITLE420985",
+        "name": "Lãnh đạo và kinh doanh trong kỹ thuật (CNTT)",
+        "numberOfCredits": 2,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "CNDE430780",
+        "name": "TThiết kế mạng",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ITIN441085",
+        "name": "Thực tập tốt nghiệp",
+        "numberOfCredits": 4,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "POSE431479",
+        "name": "Tiểu luận chuyên ngành CNPM",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "POIS431184",
+        "name": "Tiểu luận chuyên ngành HTTT",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "POCN431280",
+        "name": "Tiểu luận chuyên ngành MMT",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "WISE432380",
+        "name": "An toàn mạng không dây & di động",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "WESE331479",
+        "name": "Bảo mật web",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "ADDB331784",
+        "name": "Cơ sở dữ liệu nâng cao",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "DLEA432085",
+        "name": "Học sâu",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "NPRO430980",
+        "name": "Lập trình mạng",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "CLAD432480",
+        "name": "Quản trị trên môi trường Cloud",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "OOSD330879",
+        "name": "Thiết kế phần mềm hướng đối tượng",
+        "numberOfCredits": 3,
+        "type": "elective"
+    },
+    {
+        "subject_id": "CAAL230180",
+        "name": "Kiến trúc máy tính và hợp ngữ",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    },
+    {
+        "subject_id": "ANDC110026",
+        "name": "Anh văn đạt chuẩn học AV1",
+        "numberOfCredits": 3,
+        "type": "specialized"
+    }
+]
