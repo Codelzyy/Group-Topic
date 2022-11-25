@@ -5,13 +5,10 @@ const path = require('path');
 const mongoose = require('mongoose');
 
 // const ip = fs.readFileSync('/home/ec2-user/Cloud/ip.txt', { encoding: 'utf8', flag: 'r' });
-const ip = 'localhost';
-console.log(ip);
 
 exports.getLoginForm = (req, res) => {
    res.status(200).render('login', {
       title: 'Log into your account',
-      ip,
    });
 };
 exports.getLogout = catchAsync(async (req, res) => {
@@ -107,7 +104,6 @@ exports.getListCourse = catchAsync(async (req, res) => {
    res.status(200).render('swapclass', {
       title: 'Log into your account',
       courses,
-      ip,
    });
 });
 exports.getHomePage = catchAsync(async (req, res) => {
@@ -116,12 +112,10 @@ exports.getHomePage = catchAsync(async (req, res) => {
       res.status(200).render('homepage', {
          user: req.user,
          subjects,
-         ip,
       });
    } catch (err) {
       res.status(200).render('homepage', {
          user: req.user,
-         ip,
          subjects: [],
       });
    }
@@ -130,7 +124,6 @@ exports.getSearchCourse = catchAsync(async (req, res) => {
    console.log(req.user);
    try {
       res.status(200).render('tracuu', {
-         ip,
          user: req.user,
       });
    } catch (err) {
@@ -279,11 +272,9 @@ exports.getRegister = catchAsync(async (req, res) => {
 
       res.status(200).render('mainpage', {
          user,
-         ip,
          STT,
          courses,
          courseOpen,
-         ip,
       });
    } catch (err) {
       console.log(err.message);
