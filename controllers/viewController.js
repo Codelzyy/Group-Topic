@@ -4,7 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const mongoose = require('mongoose');
 
-const ip = fs.readFileSync('/home/ec2-user/Cloud/ip.txt', { encoding: 'utf8', flag: 'r' });
+// const ip = fs.readFileSync('/home/ec2-user/Cloud/ip.txt', { encoding: 'utf8', flag: 'r' });
+const ip = 'localhost';
 console.log(ip);
 
 exports.getLoginForm = (req, res) => {
@@ -147,11 +148,12 @@ exports.getRegister = catchAsync(async (req, res) => {
          res.redirect(`/login`);
          return;
       }
+      const idClass = JSON.parse(JSON.stringify(req.user));
       const data = await Course.aggregate([
          {
             $match: {
                status: 'enrolling',
-               class: mongoose.Types.ObjectId(req.user.class),
+               class: mongoose.Types.ObjectId(idClass.class),
                dateEndEnroll: { $gte: new Date(new Date(Date.now()).toISOString()) },
             },
          },
@@ -272,6 +274,9 @@ exports.getRegister = catchAsync(async (req, res) => {
             return a + b;
          }, 0);
       const user = req.user._doc;
+
+      console.log(data);
+
       res.status(200).render('mainpage', {
          user,
          ip,

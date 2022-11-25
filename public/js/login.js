@@ -16,7 +16,7 @@ const showAlert = (type, msg, time = 7) => {
 
 export const login = async (email, password) => {
    try {
-      const res = await axios.post(`http://${ip}:8080/api/v1/users/login`, {
+      const res = await axios.post(`/api/v1/users/login`, {
          email,
       });
       console.log(res);

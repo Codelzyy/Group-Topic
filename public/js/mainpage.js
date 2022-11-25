@@ -4,7 +4,7 @@ const btn = document.querySelector('.btn-delete-swap');
 const btn_open = document.querySelector('.btn-search');
 export const deleteCourse = async (course) => {
    try {
-      const res = await axios.patch(`http://${ip}:8080/api/v1/courses/enroll/${course}`);
+      const res = await axios.patch(`/api/v1/courses/enroll/${course}`);
       location.assign('/');
    } catch (err) {
       console.log(err.message);
@@ -12,7 +12,7 @@ export const deleteCourse = async (course) => {
 };
 export const swapCourse = async (course) => {
    try {
-      window.open(`http://${ip}:8080/course/${course}`, 'name', 'width=900,height=900');
+      window.open(`/course/${course}`, 'name', 'width=900,height=900');
    } catch (err) {
       console.log(err.message);
    }

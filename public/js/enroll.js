@@ -4,7 +4,7 @@ const btn = document.querySelector('.btn-enroll');
 const message = document.querySelector('.message-enroll');
 export const enrollCourses = async (course) => {
    try {
-      const res = await axios.post(`http://${ip}:8080/api/v1/courses/enroll/${course}`);
+      const res = await axios.post(`/api/v1/courses/enroll/${course}`);
       message.insertAdjacentHTML('afterend', `<p class="message-success">Đã đăng ký thành công</p>`);
       window.setTimeout(() => {
          location.reload();

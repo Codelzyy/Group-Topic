@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
-
 // process.on('uncaughtException', (err) => {
 //    console.log('UNCAUGHT EXCEPTION! 💥 Shutting down...');
 //    console.log(err.name, err.message);
@@ -9,7 +8,7 @@ const dotenv = require('dotenv');
 // });
 dotenv.config({ path: './config.env' });
 const app = require('./app');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 80;
 const server = app.listen(port, () => {
    console.log(`App running on port ${port}...`);
 });

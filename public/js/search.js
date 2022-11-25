@@ -59,7 +59,7 @@ const template = (courses) => {
 };
 export const enrollCourse = async (course) => {
    try {
-      const res = await axios.post(`http://${ip}:8080/api/v1/courses/enroll/${course}`);
+      const res = await axios.post(`/api/v1/courses/enroll/${course}`);
       document
          .querySelector('#datatable')
          .insertAdjacentHTML('beforebegin', `<p class="message-success">Đã đăng ký thành công</p>`);
@@ -78,7 +78,7 @@ export const enrollCourse = async (course) => {
 };
 export const search = async (search_text, option) => {
    try {
-      const res = await axios.get(`http://${ip}:8080/api/v1/courses?${option}=${search_text}`);
+      const res = await axios.get(`/api/v1/courses?${option}=${search_text}`);
       document.querySelector('#datatable').innerHTML = template(res.data.data.data);
       console.log(document.querySelector('#datatable'));
       const btn_enroll = document.querySelector('.enroll-click');

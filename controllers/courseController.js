@@ -101,6 +101,8 @@ exports.getAllCourses = catchAsync(async (req, res, next) => {
       delete x.students;
       return x;
    });
+   console.log(courses);
+
    return res.status(200).json({
       status: 'success',
       length: courses.length,

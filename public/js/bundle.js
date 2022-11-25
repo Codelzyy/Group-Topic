@@ -154,7 +154,7 @@ var login = /*#__PURE__*/function () {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return axios.post("http://".concat(ip, ":8080/api/v1/users/login"), {
+            return axios.post("/api/v1/users/login", {
               email: email
             });
           case 3:
@@ -258,7 +258,7 @@ var enrollCourse = /*#__PURE__*/function () {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return axios.post("http://".concat(ip, ":8080/api/v1/courses/enroll/").concat(course));
+            return axios.post("/api/v1/courses/enroll/".concat(course));
           case 3:
             res = _context.sent;
             document.querySelector('#datatable').insertAdjacentHTML('beforebegin', "<p class=\"message-success\">\u0110\xE3 \u0111\u0103ng k\xFD th\xE0nh c\xF4ng</p>");
@@ -296,7 +296,7 @@ var search = /*#__PURE__*/function () {
           case 0:
             _context2.prev = 0;
             _context2.next = 3;
-            return axios.get("http://".concat(ip, ":8080/api/v1/courses?").concat(option, "=").concat(search_text));
+            return axios.get("/api/v1/courses?".concat(option, "=").concat(search_text));
           case 3:
             res = _context2.sent;
             document.querySelector('#datatable').innerHTML = template(res.data.data.data);
@@ -373,7 +373,7 @@ var enrollCourses = /*#__PURE__*/function () {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return axios.post("http://".concat(ip, ":8080/api/v1/courses/enroll/").concat(course));
+            return axios.post("/api/v1/courses/enroll/".concat(course));
           case 3:
             res = _context.sent;
             message.insertAdjacentHTML('afterend', "<p class=\"message-success\">\u0110\xE3 \u0111\u0103ng k\xFD th\xE0nh c\xF4ng</p>");
@@ -431,7 +431,7 @@ var deleteCourse = /*#__PURE__*/function () {
           case 0:
             _context.prev = 0;
             _context.next = 3;
-            return axios.patch("http://".concat(ip, ":8080/api/v1/courses/enroll/").concat(course));
+            return axios.patch("/api/v1/courses/enroll/".concat(course));
           case 3:
             res = _context.sent;
             location.assign('/');
@@ -460,7 +460,7 @@ var swapCourse = /*#__PURE__*/function () {
         switch (_context2.prev = _context2.next) {
           case 0:
             try {
-              window.open("http://".concat(ip, ":8080/course/").concat(course), 'name', 'width=900,height=900');
+              window.open("/course/".concat(course), 'name', 'width=900,height=900');
             } catch (err) {
               console.log(err.message);
             }
@@ -583,7 +583,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46257" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60282" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
