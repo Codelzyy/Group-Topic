@@ -22,9 +22,9 @@ block content
                         .PanelBarMenu
                             ul.menubar
                                 li.bg_mn
-                                    a(href='/' target='_parent') Trang &dstrok;&abreve;ng ky&#x301; ho&#x323;c ph&#x1EA7;n
+                                    a(href='/' target='_parent') Trang đăng ký học phần
                                 li.bg_mn
-                                    a(href='/tracuu' target='_newtab') Tra c&#x1B0;&#x301;u ho&#x323;c ph&#x1EA7;n
+                                    a(href='/tracuu' target='_newtab') Tra cứu học phần
                                 li.bg_mn
                                     a(href='/hocphan' target='_newtab') Chương trình đào tạo
                 .panelcontent1
@@ -36,14 +36,14 @@ block content
                                         tbody
                                             tr
                                                 td
-                                                    b.title Tra c&#x1B0;&#x301;u m&ocirc;n ho&#x323;c
+                                                    b.title Tra cứu môn học
                                             tr
                                                 td(align='center')
                                                     b
-                                                        | Ti&#x300;m theo :
+                                                        | Tìm theo :
                                                         select(id='ddlMonHoc' style='width: 100px')
-                                                            option(value='0') Ma&#x303; m&ocirc;n
-                                                            option(value='1') T&ecirc;n m&ocirc;n
+                                                            option(value='0') Mã môn
+                                                            option(value='1') Tên môn
                                                     input#txtSearch.txttext(type='text' style='width: 200px' name='txtSearch')
                                                     input#btntim.button(type='submit' title='Tìm môn học' name='btntim' value='Tìm kiếm')
                                             tr(id='datatable')

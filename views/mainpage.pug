@@ -24,9 +24,9 @@ block content
                         .PanelBarMenu
                             ul.menubar
                                 li.bg_mn
-                                    a(href='/' target='_parent') Trang &dstrok;&abreve;ng ky&#x301; ho&#x323;c ph&#x1EA7;n
+                                    a(href='/' target='_parent') Trang đăng ký học phần
                                 li.bg_mn
-                                    a(href='/tracuu' target='_newtab') Tra c&#x1B0;&#x301;u ho&#x323;c ph&#x1EA7;n
+                                    a(href='/tracuu' target='_newtab') Tra cứu học phần
                                 li.bg_mn
                                     a(href='/hocphan' target='_newtab') Chương trình đào tạo
                 .panelcontent1
@@ -37,8 +37,7 @@ block content
                                 tr
                                     td
                                         b.title
-                                        | DANH SA&#x301;CH NH&#x1EEE;NG H&#x1ECC;C PH&#x1EA6;N CH&#x1AF;A T&Iacute;CH L&Utilde;Y &Dstrok;&#x1AF;&#x1EE2;C T&#x1ED4; CH&#x1EE8;C GI&#x1EA2;NG D&#x1EA0;Y THEO K&#x1EBE;
-                                        | HO&#x1EA0;CH
+                                        | DANH SÁCH NHỮNG HỌC PHẦN CHƯA TÍCH LŨY THEO KẾ HOẠCH
                                 tr
                                     td(align='right')
                                 tr
@@ -48,11 +47,11 @@ block content
                                             thead
                                                 tr
                                                     th STT
-                                                    th M&atilde; HP
-                                                    th T&ecirc;n h&#x1ECD;c ph&#x1EA7;n
-                                                    th Lo&#x1EA1;i HP
-                                                    th S&#x1ED1; t&iacute;n ch&#x1EC9;
-                                                    th &Dstrok;&abreve;ng k&yacute;
+                                                    th Mã HP
+                                                    th Tên học phần
+                                                    th Loại HP
+                                                    th Số tín chỉ
+                                                    th Đăng ký
                                             tbody.btn-search
                                                 ul
                                                     each course, i in courseOpen
@@ -70,12 +69,12 @@ block content
                         div.dsdk
                             fieldset.fielddschon
                                 legend
-                                    b.legend-chon Phi&#x1EBF;u &dstrok;&abreve;ng k&yacute; m&ocirc;n h&#x1ECD;c
+                                    b.legend-chon Phiếu đăng ký môn học
                                 #DanhSachHocPhanDaDangKi
                                     div.dshpdk
                                         a(href='/')
                                             img(src='/Content/images/refresh.png' width='25')
-                                        |                                        Lo&#x323;c la&#x323;i
+                                        |                                        Lọc lại
                                     #reload_ketquadangki
                                         table(width='100%')
                                             tr
@@ -83,9 +82,9 @@ block content
                                                     b.kq-reload=`Tổng số tín chỉ đã đăng ký : ${STT} tín chỉ`
                                                 td.td-kq-reload
                                                     b
-                                                        | Ghi ch&uacute; :
+                                                        | Ghi chú :
                                                         img(src='/Content/images/yellow.png' width='15px')
-                                                        |                                                 Tr&ugrave;ng l&#x1ECB;ch
+                                                        |                                                 Trùng lịch
                                         table.tb-kqdk(width='100%' border='1' cellpadding='10')
                                             thead
                                                 tr
@@ -119,5 +118,5 @@ block content
                                             tr
                                                 td.tdata(colspan='9' align='right')
                                                     a(href='' target='_blank')
-                                                        b.b-phieu() Xu&#x1EA5;t phi&#x1EBF;u &dstrok;&abreve;ng k&yacute;
+                                                        b.b-phieu() Xuất phiếu đăng ký
                                                         img(src='/Content/images/printer.jpg' width='25')
