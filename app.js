@@ -33,7 +33,11 @@ const {
 const app = express();
 
 const DB = String(process.env.DATABASE).replace('<PASSWORD>', process.env.DATABASE_PASSWORD);
-mongoose.connect(DB, {}).then(() => console.log('DB connection successful!'));
+mongoose
+   .connect(
+      'mongodb://clouddb:Ym80fcOCrJRJV6kz@docdb-2022-11-28-06-43-56.cluster-c7iikwtqjgrp.ap-southeast-1.docdb.amazonaws.com:27017/?replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false'
+   )
+   .then(() => console.log('DB connection successful!'));
 app.enable('trust proxy');
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
