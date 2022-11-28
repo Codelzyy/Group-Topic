@@ -35,7 +35,7 @@ const app = express();
 const DB = String(process.env.DATABASE).replace('<PASSWORD>', process.env.DATABASE_PASSWORD);
 mongoose
    .connect(
-      'mongodb://clouddb:Ym80fcOCrJRJV6kz@docdb-2022-11-28-06-43-56.cluster-c7iikwtqjgrp.ap-southeast-1.docdb.amazonaws.com:27017/?replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false'
+      'mongodb+srv://clouddb:Ym80fcOCrJRJV6kz@cluster0.c9fkejp.mongodb.net/?retryWrites=true&w=majority'
    )
    .then(() => console.log('DB connection successful!'));
 app.enable('trust proxy');

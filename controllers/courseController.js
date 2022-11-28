@@ -53,22 +53,22 @@ exports.getAllCourses = catchAsync(async (req, res, next) => {
          },
       },
       {
-         $addFields: { teachername: { $first: '$teacher.name' } },
+         $addFields: { teachername: { $arrayElemAt: ['$teacher.name', 0] } },
       },
       {
-         $addFields: { classname: { $first: '$class.name' } },
+         $addFields: { classname: { $arrayElemAt: ['$class.name', 0] } },
       },
       {
-         $addFields: { subject_id: { $first: '$subject.subject_id' } },
+         $addFields: { subject_id: { $arrayElemAt: ['$subject.subject_id', 0] } },
       },
       {
-         $addFields: { stc: { $first: '$subject.numberOfCredits' } },
+         $addFields: { stc: { $arrayElemAt: ['$subject.numberOfCredits', 0] } },
       },
       {
-         $addFields: { subjectname: { $first: '$subject.name' } },
+         $addFields: { subjectname: { $arrayElemAt: ['$subject.name', 0] } },
       },
       {
-         $addFields: { type: { $first: '$subject.type' } },
+         $addFields: { type: { $arrayElemAt: ['$subject.type', 0] } },
       },
       {
          $addFields: {
